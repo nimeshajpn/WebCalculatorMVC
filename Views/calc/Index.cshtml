@@ -1,0 +1,72 @@
+﻿@model My.Models.calm
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@using(Html.BeginForm("Index","calc",FormMethod.Post))
+{
+
+
+   
+<div class="  border bg-light" style="width:280px;">
+    <div class="container">
+        <h1 class="m-1">Calculator</h1>
+    </div>
+   
+     
+     <label class="m-3 text-primary" type="text" value="@Model.tbm1" name="tb1" id="tb1" >@Model.tbm1</label>
+     
+     <br>
+     <input class="m-3" type="text" value="@Model.tbm2" name="tb2" id="tb2" style="width:235px" />
+     
+<div class="m-2">
+
+    <div>
+          <button class=" btn-primary  m-1 btn-lg " name="cal"  value="1"   type="submit"  id="1" style="width:50px">1</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="2"   type="submit"  id="1" style="width:50px">2</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="3"   type="submit"  id="1" style="width:50px">3</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="+"   type="submit"  id="1" style="width:50px">+</button>
+
+          <br>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="4"   type="submit"  id="1" style="width:50px">4</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="5"   type="submit"  id="1" style="width:50px">5</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="6"   type="submit"  id="1" style="width:50px">6</button>
+          <button class="btn-primary  m-1 btn-lg" name="cal"  value="-"   type="submit"  id="1" style="width:50px">-</button>
+
+          <br>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="7"   type="submit"  id="1" style="width:50px">7</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="8"   type="submit"  id="1" style="width:50px">8</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="9"   type="submit"  id="1" style="width:50px">9</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="*"   type="submit"  id="1" style="width:50px">*</button>
+          <br>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="0"   type="submit"  id="1" style="width:112px">0</button>
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="."   type="submit"  id="1" style="width:50px">.</button>
+          
+         
+          <button class=" btn-primary  m-1 btn-lg" name="cal"  value="/"   type="submit"  id="1" style="width:50px">/</button>
+          
+          <br>
+          
+           <button class=" btn-primary  m-1 btn-lg" name="cal"  value="="   type="submit"  id="1" style="width:112px">=</button>
+          <button class=" btn-primary  m-1 btn-lg " name="cal"  value="c"   type="submit"  id="1" style="width:112px ">c</button>
+    </div>
+
+    
+
+
+
+
+</div>
+     
+ </div>   
+
+     
+
+
+
+
+
+
+
+}
